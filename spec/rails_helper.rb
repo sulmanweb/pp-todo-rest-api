@@ -5,6 +5,7 @@ require File.expand_path("../config/environment", __dir__)
 ENV["RAILS_ENV"] ||= "test"
 require "rspec/rails"
 require "spec_helper"
+require "faker"
 # should a matcher settings
 include ActiveJob::TestHelper
 
@@ -35,6 +36,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 ActiveRecord::Migration.maintain_test_schema!
 ActiveJob::Base.queue_adapter = :test
 FactoryBot.rewind_sequences
+Faker::UniqueGenerator.clear
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+def create_first_fake_user
+  user = FactoryBot.create(:user)
+  p "========================================"
+  p "First user created"
+  p user.email
+  p user.password
+  p "========================================"
+end
+
+create_first_fake_user

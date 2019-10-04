@@ -15,6 +15,8 @@ gem 'jbuilder', '2.9.1'
 gem 'bootsnap', '1.4.5', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors', '1.0.3'
+# hash passwords
+gem 'bcrypt', '3.1.13'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -22,6 +24,7 @@ group :development, :test do
   # RSpec suite
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
+  gem 'faker', '~> 2.5'
 end
 
 group :development do
