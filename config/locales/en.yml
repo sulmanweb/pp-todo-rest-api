@@ -5,3 +5,7 @@ en:
     user:
       format_password: 'must be 8 to 72 characters must contain a number.'
       format_email: 'is not a valid. Please provide valid Email to continue.'
+    task:
+      status:
+        todo: 'ToDo'
+        done: 'Done'
