@@ -10,9 +10,21 @@ def create_first_fake_user
   user = FactoryBot.create(:user)
   p "========================================"
   p "First user created"
+  p user.id
   p user.email
   p user.password
   p "========================================"
+  user
 end
 
-create_first_fake_user
+def create_first_list(user)
+  list = FactoryBot.create(:list, user_id: user.id)
+  p "========================================"
+  p "First list for the user created"
+  p list.id
+  p list.name
+  p "========================================"
+  list
+end
+
+create_first_list(create_first_fake_user())
