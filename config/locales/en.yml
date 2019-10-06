@@ -9,3 +9,7 @@ en:
       status:
         todo: 'ToDo'
         done: 'Done'
+  
+  errors:
+    not_found: 'sorry the record you requested could not be found'
+    internal_server_error: 'sorry there was an error and admin has been informed.'
