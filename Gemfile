@@ -14,7 +14,7 @@ gem 'jbuilder', '2.9.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '1.4.5', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-gem 'rack-cors', '1.0.3'
+gem 'rack-cors', '1.0.5'
 # hash passwords
 gem 'bcrypt', '3.1.13'
 # for enums
