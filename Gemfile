@@ -8,7 +8,7 @@ gem 'rails', '6.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '1.1.4'
 # Use Puma as the app server
-gem 'puma', '4.2.0'
+gem 'puma', '4.3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.9.1'
 # Reduces boot times through caching; required in config/boot.rb
